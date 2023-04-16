@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:id="@+id/fotoMovie"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/mario"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/nomeMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THE SUPER MARIO BROS. MOVIE"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fotoMovie"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/descricaoMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hhdhd"
+        android:textSize="16sp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMovie"
+        app:layout_constraintStart_toEndOf="@+id/fotoMovie"
+        />
+    
+    <TextView
+        android:id="@+id/dateMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="UPCOMING SHOWINGS FOR TODAY, SUN 16 APR"
+        android:textSize="11sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoMovie"
+        app:layout_constraintStart_toEndOf="@+id/fotoMovie"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
